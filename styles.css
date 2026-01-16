@@ -180,6 +180,79 @@ body {
     line-height: 1.7;
 }
 
+/* Benefits Section */
+.benefits {
+    padding: 120px 0;
+    background: var(--bg-charcoal);
+}
+
+.benefits .section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.benefit-item h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--accent-blue);
+}
+
+.benefit-item p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* Application Box */
+.application-box {
+    background: var(--bg-charcoal);
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    margin: 3rem auto;
+    max-width: 700px;
+    text-align: left;
+}
+
+.application-box h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--accent-blue);
+}
+
+.application-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.application-box li {
+    padding: 12px 0 12px 30px;
+    position: relative;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.application-box li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+    font-weight: 700;
+}
+
 /* Offer Section */
 .offer {
     padding: 120px 0;
@@ -233,7 +306,7 @@ body {
         grid-template-columns: 1fr;
     }
     
-    .problem, .solution, .offer {
+    .problem, .solution, .offer, .benefits {
         padding: 80px 0;
     }
 }
